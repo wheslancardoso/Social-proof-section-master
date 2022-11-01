@@ -1,0 +1,105 @@
+@use './colors.scss' as colors;
+
+.card-box {
+   display: flex;
+   gap: 2em;
+   // max-height: 436px;
+}
+
+.card {
+   background-color: colors.$very-dark-magenta;
+   padding: 2em;
+   padding-right: 1.5em;
+   color: white;
+   border-radius: 0.5em;
+   // flex: 1;
+}
+
+.profile {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1.5em;
+
+   .profile-img {
+      width: 50px;
+      margin: 0;
+      img {
+         border-radius: 50%;
+         width: 100%;
+      }
+   }
+
+   .profile-desc {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 1.25em;
+      line-height: 1.25;
+
+      .name {
+         font-weight: 500;
+      }
+      .verified {
+         color: colors.$soft-pink;
+      }
+   }
+}
+
+.card-text {
+   p {
+      line-height: 1.25;
+   }
+}
+
+.card1 {
+   margin-top: 1em;
+}
+
+.card2 {
+   margin-top: 2em;
+}
+
+.card3 {
+   margin-top: 3em;
+}
+
+@media (max-width: 780px) {
+   .card-box {
+      margin-right: 1em;
+      gap: 1em;
+   }
+
+   .profile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .profile-desc {
+         margin-left: 0;
+         margin-top: 0.5em;
+      }
+   }
+}
+
+@media (max-width: 630px) {
+   .card-box {
+      flex-wrap: wrap;
+   }
+
+   .card {
+      margin-top: 0;
+      padding: 1.5em;
+      flex: 1 1 200px;
+   }
+
+   .profile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .profile-desc {
+         margin-left: 0;
+         margin-top: 0.5em;
+      }
+   }
+}

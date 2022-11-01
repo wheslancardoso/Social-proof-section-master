@@ -1,0 +1,42 @@
+@use './colors.scss' as colors;
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   min-height: 100%;
+   font-family: colors.$font-primary;
+}
+
+body::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+   display: block;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: #ccc;
+   border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+   background: #b3b3b3;
+   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+   background-color: #999999;
+}
+
+body::-webkit-scrollbar-track {
+   background: #e1e1e1;
+   border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+   background: #d4d4d4;
+}

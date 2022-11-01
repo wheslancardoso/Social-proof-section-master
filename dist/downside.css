@@ -1,0 +1,90 @@
+.card-box {
+  display: flex;
+  gap: 2em;
+}
+
+.card {
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 2em;
+  padding-right: 1.5em;
+  color: white;
+  border-radius: 0.5em;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.profile .profile-img {
+  width: 50px;
+  margin: 0;
+}
+.profile .profile-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+.profile .profile-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 1.25em;
+  line-height: 1.25;
+}
+.profile .profile-desc .name {
+  font-weight: 500;
+}
+.profile .profile-desc .verified {
+  color: hsl(333deg, 80%, 67%);
+}
+
+.card-text p {
+  line-height: 1.25;
+}
+
+.card1 {
+  margin-top: 1em;
+}
+
+.card2 {
+  margin-top: 2em;
+}
+
+.card3 {
+  margin-top: 3em;
+}
+
+@media (max-width: 780px) {
+  .card-box {
+    margin-right: 1em;
+    gap: 1em;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile .profile-desc {
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+}
+@media (max-width: 630px) {
+  .card-box {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin-top: 0;
+    padding: 1.5em;
+    flex: 1 1 200px;
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile .profile-desc {
+    margin-left: 0;
+    margin-top: 0.5em;
+  }
+}

@@ -1,0 +1,40 @@
+.pattern-top,
+.pattern-bottom {
+   position: fixed;
+   background-repeat: no-repeat;
+}
+
+.pattern-top {
+   width: 50vw;
+   height: 50vw;
+   top: 0;
+   left: 0;
+   background-image: url(../images/bg-pattern-top-desktop.svg);
+   background-position: top;
+   background-size: contain;
+}
+
+// .pattern-bottom {
+//    width: 30vw;
+//    height: 50vw;
+//    bottom: 0;
+//    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+//    background-position: bottom;
+//    background-size: cover;
+// }
+
+@media (min-width: 750px) {
+   .pattern-top {
+      top: 0;
+      left: 0;
+      background-image: url(../images/bg-pattern-top-mobile.svg);
+   }
+
+   .pattern-bottom {
+      bottom: 0;
+      right: 0;
+      background-image: url(../images/bg-pattern-bottom-mobile.svg);
+      transform: rotateX(360deg);
+      background-position: bottom;
+   }
+}

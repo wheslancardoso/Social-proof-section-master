@@ -1,0 +1,98 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 2em;
+}
+
+.box-wrapper {
+  display: flex;
+  margin-top: 5em;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.left-content h1 {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+.left-content p {
+  color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.box {
+  background-color: hsl(300deg, 24%, 96%);
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  width: 90%;
+}
+.box .rated {
+  margin-left: 2em;
+  color: hsl(300deg, 43%, 22%);
+}
+.box .rated p {
+  font-weight: 700;
+}
+
+.box-content-1 {
+  margin-top: 1em;
+}
+
+.box-content-2 {
+  margin-left: 3em;
+}
+
+.box-content-3 {
+  margin-left: 6em;
+}
+
+@media (max-width: 830px) {
+  .left-content {
+    margin-right: 1em;
+  }
+  .box-content-2,
+.box-content-3 {
+    margin-left: 0;
+  }
+  .box {
+    padding: 1em 1em;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .box .rated {
+    margin-top: 0.5em;
+    margin-left: 0;
+  }
+  .box-content-1 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 425px) {
+  .box-wrapper {
+    flex-direction: column;
+    margin-bottom: 3em;
+  }
+  .box-wrapper .left-content {
+    margin-bottom: 3em;
+  }
+  .card-box {
+    margin-bottom: 2em;
+  }
+  .card-box .profile {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .card-box .profile-desc {
+    margin-left: 1em;
+    text-align: left;
+  }
+}

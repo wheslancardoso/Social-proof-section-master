@@ -1,0 +1,112 @@
+@use './colors.scss' as colors;
+
+.container {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding-left: 2em;
+}
+
+.box-wrapper {
+   display: flex;
+   margin-top: 5em;
+   justify-content: space-between;
+   //    align-items: flex-start;
+   margin-bottom: 5em;
+}
+
+.left-content {
+   h1 {
+      color: colors.$very-dark-magenta;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+   }
+
+   p {
+      color: colors.$dark-grayish-magenta;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5;
+   }
+}
+
+.box {
+   background-color: colors.$light-grayish-magenta;
+   padding: 1em 2em;
+   border-radius: 0.5em;
+   display: flex;
+   align-items: center;
+   margin-top: 1em;
+   width: 90%;
+   .rated {
+      margin-left: 2em;
+      color: colors.$very-dark-magenta;
+      p {
+         font-weight: 700;
+      }
+   }
+}
+
+.box-content-1 {
+   margin-top: 1em;
+}
+
+.box-content-2 {
+   margin-left: 3em;
+}
+
+.box-content-3 {
+   margin-left: 6em;
+}
+
+@media (max-width: 830px) {
+   .left-content {
+      margin-right: 1em;
+   }
+
+   .box-content-2,
+   .box-content-3 {
+      margin-left: 0;
+   }
+
+   .box {
+      padding: 1em 1em;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .rated {
+         margin-top: 0.5em;
+         margin-left: 0;
+      }
+   }
+
+   .box-content-1 {
+      margin-top: 0;
+   }
+}
+
+@media (max-width: 425px) {
+   .box-wrapper {
+      flex-direction: column;
+      margin-bottom: 3em;
+      .left-content {
+         margin-bottom: 3em;
+      }
+   }
+
+   .card-box {
+      margin-bottom: 2em;
+
+      .profile {
+         flex-direction: row;
+         justify-content: start;
+         align-items: center;
+      }
+
+      .profile-desc {
+         margin-left: 1em;
+         text-align: left;
+      }
+   }
+}
